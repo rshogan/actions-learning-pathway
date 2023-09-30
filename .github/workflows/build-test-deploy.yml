@@ -41,7 +41,8 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: org/actions-learning-pathway
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: use node.js
         uses: actions/setup-node@v3
         with:
